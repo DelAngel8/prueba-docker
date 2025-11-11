@@ -6,4 +6,17 @@ Pasos Ejercicios
 
 3) crear la imagen docker y subirlo a dockerhub
 
+creamos la imagen: docker build -t simply-app:v1 .
+docker images: para ver las imagenes creadas
+
+
+docker tag simply-app:v1 delangel8/simply-app:v1
+
+logearse
+docker login -u 'delangel8' -p 'contraseña' docker.io
+
+subir imagen al repositorio
+docker push delangel8/simply-app:tagname
+
+
 4) publicar la imagen en render.com
